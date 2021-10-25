@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Momento Mori</title>
+    <link rel="shortcut icon" type="png" href="icons8-skull-96.png"/>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+
+      <header>
+        <nav>
+          <h2>momento mori</h2>
+        </nav>
+      </header>
+
+      <main class="container">
+
+        <div class="headline">
+          <h1 id="quote-shuffle"></h1>
+          <h3 id="quote-atribution"></h3>
+        </div>
+
+        <div id="form-position">
+          <form class="form-1">
+
+            <span class="form-1-box">
+              <label>Birthday</label><br>
+              <input type="date" id="birthday">
+            </span>
+
+            <span class="form-1-divider"></span>
+
+            <span class="form-1-box">
+              <label>Age of Death</label><br>
+              <select type="number" id="death-age">
+                <option value="73.2">73.2 (Global Average)</option>
+                <option value="75.6">75.6 (Female Average)</option>
+                <option value="70.8">70.8 (Male Average)</option>
+                <option value="100">100</option>
+              </select>
+            </span>
+
+            <button type="button" value="Submit" onclick="calculateResults()"><img src="icons8-skull-96.png" width="27px"/></button>
+
+          </form>
+        </div>
+
+        <div class="results">
+
+          <div id="percentage">
+            <div id="percentage-text">
+              <h3 id="messy-fix-1">You've lived </h3><h3 id="percentage-int" class="countup"></h3><h3>% of your life</h3>
+            </div>
+            <div id="bar">
+              <div id="progress"></div>
+            </div>
+          </div>
+
+          <div id="time">
+            <span class="results-column">
+              <span><h1 id="years" class="countup"> </h1><h2> Years Left</h2></span>
+              <span><h1 id="weeks" class="countup"> </h1><h2> Weeks Left</h2></span>
+            </span>
+            <span class="results-column">
+              <span><h1 id="months" class="countup"> </h1><h2> Months Left</h2></span>
+              <span><h1 id="days" class="countup"> </h1><h2> Days Left</h2></span>
+            </span>
+          </div>
+
+        </div>
+
+      </main>
+
+        <footer>
+          <p>&copy</p>
+        </footer>
+
+
+	<script src="index.js"></script>
+  </body>
+
+</html>
